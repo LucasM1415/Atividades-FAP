@@ -1,0 +1,21 @@
+Construir o modelo Entidade-relacionamento para o problema descrito abaixo:Descrição do Problema
+Deseja-se projetar uma base de dados que dará suporte a um sistema WEB para controlar as horas trabalhadas pelos profissionais de uma empresa de desenvolvimento de software. O sistema
+destina-se a coletar dados para cobrança dos clientes da empresa. Através de um diagrama entidade-relacionamento, deve ser modelada esta base de dados. A base de dados não deve conter redundância
+de dados. 
+
+O modelo ER deve ser representado com a notação vista em aula ou com outra notação de
+poder de expressão equivalente. O modelo deve apresentar, ao menos, entidades, relacionamentos,
+atributos, especializações, identificadores e restrições de cardinalidade. Não usar atributos multivalorados. O modelo deve ser feito no nível conceitual, sem incluir chaves estrangeiras.
+Todas atividades da empresa acontecem através de projetos. 
+
+Para cada projeto, o banco de dados
+deve armazenar um identificador, o nome do projeto e o seu cliente. Um cliente pode ter vários
+projetos. Além dos projetos do cliente, o banco de dados deve armazenar o número (único) do cliente,
+seu CGC e seu nome.
+Em cada projeto são alocados vários desenvolvedores.
+
+Um desenvolvedor é alocado a um projeto
+por um tempo determinado (de-até). Cada desenvolvedor tem um código identificador, um nome e
+um custo por hora trabalhada.
+Para cada vez que um desenvolvedor trabalha em um projeto, mesmo que por alguns minutos, o
+banco de dados deve armazenar, além do projeto e do desenvolvedor, a data/hora em que o desenvolvedor começou a trabalhar e a data/hora em que ele encerrou o trabalho.

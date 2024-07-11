@@ -1,0 +1,14 @@
+A companhia discográfica TomParaTodos decidiu criar uma base de dados  com informação sobre os seus músicos bem como
+outra informação da companhia. A informação dada ao desenhador foi a seguinte:
+Cada músico tem um nro. de BI, um nome, uma morada e um número de telefone. Os músicos em início de
+carreira muitas vezes partilham um endereço e além disso assume-se que cada endereço só tem um telefone.
+Cada instrumento usado nos estúdios tem um nome (ex. guitarra, bateria, etc.) e um código interno.
+Cada disco gravado na companhia tem um título, uma data, um formato (ex. CD, MC, K7), e um
+identificador do disco.
+Cada música gravada na companhia tem um título e um autor.
+Cada músico pode tocar vários instrumentos, e cada instrumento pode ser tocado por vários
+músicos.
+Cada disco tem um certo número de músicas, mas cada música só pode aparecer num disco.
+Cada música pode ter a participação de vários músicos, e cada músico pode participar em várias
+músicas.
+Cada disco tem um músico que é o seu produtor. Os músicos podem produzir vários discos.

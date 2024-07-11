@@ -1,0 +1,7 @@
+1 - Paula tem uma gráfica e cobra R$ 0.80 por folha impressa. Escreva um programa que leia a quantidade de folhas que alguém deseja imprimir e calcule e exiba (1 casa decimal) o valor a ser pago. 
+
+2 - IF Tech é uma empresa que paga seus funcionários pelas horas trabalhadas. Escreva um programa que pergunte quanto o funcionário ganha por hora e o número de horas trabalhadas por dia e calcule e exiba como saída o valor do salário desse funcionário no mês. (Considere que em um mês se trabalha 22 dias).
+
+3 - Escreva um programa que leia o nome e quantidade de horas que uma pessoa dorme por dia e calcule e exiba como saída o percentual de tempo ela passa dormindo (com duas casas decimais). O resultado deve ser apresentado da seguinte forma: “Fulano, você passa XX% do seu tempo de vida dormindo.” Onde Fulano é o nome que o usuário informou e XX é o resultado do cálculo do percentual. (Cálculo do percentual é dado pela fórmula= horas dormidas /24*100).
+
+4 - Uma pequena pousada tem quartos disponíveis para uma e duas pessoas. Escreva um código que calcula o valor total a ser pago pelos hóspedes. Pergunte quantos dias o hóspede passou e quantas pessoas ocupou o quarto. Para uma pessoa o valor cobrado será 110,00 reais por diária e 130,00 reais se forem duas. Imprima o valor total a ser pago, com 2 casas decimais.
