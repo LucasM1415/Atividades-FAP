@@ -1,0 +1,42 @@
+CREATE TABLE Usuarios (
+IDUsuario INT NOT NULL IDENTITY, 
+nome VARCHAR(80) NOT NULL,  
+RG CHAR(6) NOT NULL,
+sexo CHAR(1) NOT NULL,
+tipo VARCHAR(11) NOT NULL DEFAULT 'Discente', 
+PRIMARY KEY (IDUsuario),
+UNIQUE (RG),
+CHECK (sexo IN ('M', 'F')),
+CHECK (tipo IN ('Docente', 'Discente', 'Funcionário'))
+)
+
+CREATE TABLE Livros (
+IDLivro INT NOT NULL IDENTITY, 
+titulo VARCHAR(40) NOT NULL,
+genero VARCHAR(15), 
+ano INT,
+situacao VARCHAR(10) NOT NULL DEFAULT 'Disponível', precoCusto NUMERIC(6,2) NOT NULL,
+PRIMARY KEY (IDLivro),
+CHECK (situacao IN ('Emprestado', 'Disponível'))
+)
+
+CREATE TABLE Emprestimos ( IDEmprestimo INT NOT NULL IDENTITY, IDUsuario INT NOT NULL,
+IDLivro INT NOT NULL,
+dataSaida DATETIME NOT NULL, dataDevolucao DATETIME NOT NULL, PRIMARY KEY (IDEmprestimo),
+FOREIGN KEY (IDUsuario) REFERENCES Usuarios, FOREIGN KEY (IDLivro) REFERENCES Livros,
+)
+
+INSERT INTO Usuarios VALUES ('Fred Luiz', '043521', 'M', 'Docente')
+INSERT INTO Usuarios (nome, RG, sexo) VALUES ('Caio Leme', '106934', 'M')
+INSERT INTO Usuarios VALUES ('Maria Duarte', '198357', 'F', default)
+
+
+INSERT INTO Livros VALUES ('SQL Guide', 'Informática', 2010, 'Disponível', 200)
+INSERT INTO Livros VALUES ('Banco de Dados', null, 2008, 'Emprestado',100)
+INSERT INTO Livros VALUES ('Manual SQL', 'Informática', 2014, default, 150)
+
+
+INSERT INTO Emprestimos VALUES ( 1, 2, '2010-12-10', '2010-12-30')
+INSERT INTO Emprestimos (idLivro, dataSaida, idUsuario, dataDevolucao) VALUES (1, '2010-12-10', 3, '2010-12-25')
+	
+
